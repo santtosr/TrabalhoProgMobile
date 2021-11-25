@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Trabalho2ProgMobile</string>
+
+    <!--  Nomes das telas  -->
+    <string name="cadastrar">Cadastrar</string>
+    <string name="topicos">Tópicos</string>
+    <string name="editarPerfil">EDITAR PERFIL</string>
+    <string name="salvarPerfil">SALVAR PERFIL</string>
+
+    <!--  Erros EditText  -->
+    <string name="erro_nome_vazio">Nome não pode ser vazio</string>
+    <string name="erro_email_vazio">E-mail não pode ser vazio</string>
+    <string name="erro_senha_vazia">Senha não pode ser vazia</string>
+    <string name="erro_confirmar_senha">Senhas precisam ser iguais</string>
+    <string name="erro_descricao">Descrição não pode ser vazio</string>
+    <string name="erro_comentario">Comentário não pode ser vazio</string>
+
+    <!-- Strings de Comando do Dialog -->
+    <string name="dialog_mostrar">mostrar</string>
+    <string name="dialog_atualizar">atualizar</string>
+    <string name="dialog_remover">remover</string>
+
+    <!-- Mensagens do Dialog -->
+    <string name="erro_dialog">Erro</string>
+    <string name="salvando_usuario">Salvando Usuário no Banco de Dados</string>
+    <string name="salvando_comentario">Salvando Comentário no Banco de Dados</string>
+    <string name="salvando_topico">Salvando tópico no banco de dados.</string>
+    <string name="retorno">Retorno</string>
+    <string name="alerta">Alerta!</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirmar">Confirmar</string>
+
+    <!-- Strings -->
+    <string name="digite_o_nome">Digite o Nome</string>
+    <string name="registrar">Registrar</string>
+    <string name="login">Login</string>
+    <string name="email">E-mail</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="pass">Senha</string>
+    <string name="confirm_pass">Confirmar senha</string>
+    <string name="usuario_inserido">Usuário Inserido com Sucesso!</string>
+    <string name="comentario_inserido">Comentário Inserido com Sucesso!</string>
+    <string name="topico_inserido">Tópico inserido com sucesso!</string>
+    <string name="usuario_atualizado">Usuário Atualizado com Sucesso!</string>
+    <string name="tititi">TiTiTi \nBlog</string>
+    <string name="erro_login">Email e/ou senha incorretos</string>
+    <string name="erro_inserir_usuario">Erro ao inserir Usuário</string>
+    <string name="erro_inserir_topico">Erro ao inserir tópico.</string>
+    <string name="erro_atualizar_usuario">Erro ao Atualizar Usuário</string>
+    <string name="novo_topico">Novo Tópico</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="postar_topico">Postar</string>
+    <string name="descricao_topico">Descrição</string>
+    <string name="nome_topico">Nome</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="comentarios">Comentários</string>
+    <string name="postar">Postar</string>
+    <string name="esreva_um_comentario">Algo para comentar...</string>
+
+</resources>

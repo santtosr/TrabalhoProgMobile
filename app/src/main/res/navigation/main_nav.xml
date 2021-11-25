@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/inicialFragment">
+
+    <fragment
+        android:id="@+id/inicialFragment"
+        android:name="com.example.trabalho2progmobile.aplicacao.inicial.InicialFragment"
+        android:label="inicial_fragment"
+        tools:layout="@layout/inicial_fragment" >
+        <action
+            android:id="@+id/action_inicialFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_inicialFragment_to_cadastrarFragment"
+            app:destination="@id/cadastrarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.trabalho2progmobile.aplicacao.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_topicosFragment"
+            app:destination="@id/topicosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarFragment"
+        android:name="com.example.trabalho2progmobile.aplicacao.cadastro.CadastrarFragment"
+        android:label="cadastrar_fragment"
+        tools:layout="@layout/cadastrar_fragment" />
+    <fragment
+        android:id="@+id/topicosFragment"
+        android:name="com.example.trabalho2progmobile.aplicacao.topicos.TopicosFragment"
+        android:label="topicos_fragment"
+        tools:layout="@layout/topicos_fragment" >
+        <argument
+            android:name="usuario"
+            app:argType="com.example.trabalho2progmobile.bancoDeDados.usuario.Usuario" />
+        <action
+            android:id="@+id/action_topicosFragment_to_cadastrarTopicoFragment"
+            app:destination="@id/cadastrarTopicoFragment" />
+        <action
+            android:id="@+id/action_topicosFragment_to_editarUsuarioFragment"
+            app:destination="@id/editarUsuarioFragment" />
+        <action
+            android:id="@+id/action_topicosFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarTopicoFragment"
+        android:name="com.example.trabalho2progmobile.aplicacao.cadastrarTopico.CadastrarTopicoFragment"
+        android:label="cadastrar_topico_fragment"
+        tools:layout="@layout/cadastrar_topico_fragment" />
+    <fragment
+        android:id="@+id/editarUsuarioFragment"
+        android:name="com.example.trabalho2progmobile.aplicacao.editarUsuario.EditarUsuarioFragment"
+        android:label="editar_usuario_fragment"
+        tools:layout="@layout/editar_usuario_fragment" >
+        <argument
+            android:name="usuario"
+            app:argType="com.example.trabalho2progmobile.bancoDeDados.usuario.Usuario" />
+    </fragment>
+    <fragment
+        android:id="@+id/comentariosFragment"
+        android:name="com.example.trabalho2progmobile.aplicacao.comentarios.ComentariosFragment"
+        android:label="comentarios_fragment"
+        tools:layout="@layout/comentarios_fragment" >
+        <argument
+            android:name="topico"
+            app:argType="com.example.trabalho2progmobile.bancoDeDados.topico.Topico" />
+        <argument
+            android:name="usuario"
+            app:argType="com.example.trabalho2progmobile.bancoDeDados.usuario.Usuario" />
+    </fragment>
+</navigation>

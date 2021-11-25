@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="fab_label" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:background">@drawable/fab_label_background</item>
+
+        <item name="android:textColor">@color/branco</item>
+    </style>
+
+</resources>

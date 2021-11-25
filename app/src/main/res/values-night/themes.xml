@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Trabalho2ProgMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/corPrincipal</item>
+        <item name="colorPrimaryVariant">@color/corBarraDeNotificacao</item>
+        <item name="colorOnPrimary">@color/preto</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/corPrincipalVariante</item>
+        <item name="colorSecondaryVariant">@color/corPrincipalVariante</item>
+        <item name="colorOnSecondary">@color/preto</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

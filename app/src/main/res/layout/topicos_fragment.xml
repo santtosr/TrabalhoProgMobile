@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".aplicacao.topicos.TopicosFragment">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewTopicos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:listitem="@layout/recyclerview_topicos">
+                        </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end">
+
+                        <com.getbase.floatingactionbutton.FloatingActionsMenu
+                            android:id="@+id/fabMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="20dp"
+                            app:fab_addButtonColorNormal="@color/corPrincipal"
+                            app:fab_addButtonColorPressed="@color/corPrincipal"
+                            app:fab_addButtonPlusIconColor="@color/branco"
+                            app:fab_labelStyle="@style/fab_label">
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/btnNovoTopico"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:fab_colorNormal="@color/corPrincipal"
+                                    app:fab_colorPressed="@color/corPrincipal"
+                                    app:fab_icon="@drawable/ic_novo_topico"
+                                    app:fab_size="mini"
+                                    app:fab_title="@string/novo_topico" />
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/btnDigitarCodBarras"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:fab_colorNormal="@color/corPrincipal"
+                                    app:fab_colorPressed="@color/corPrincipal"
+                                    app:fab_icon="@drawable/ic_editar_perfil"
+                                    app:fab_size="mini"
+                                    app:fab_title="@string/editar_perfil" />
+                        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+                </FrameLayout>
+        </FrameLayout>
+</FrameLayout>
